@@ -1,14 +1,18 @@
 {
-    // VS Code workspace for the Local PDF Search KB project.
-    // Open this file in VS Code ("File > Open Workspace from File...").
+    // Multi-root VS Code workspace: both editions of the PDF search project.
+    // Open via "File > Open Workspace from File..." — each folder uses its
+    // own venv (set in its .vscode/settings.json).
     "folders": [
         {
-            "name": "PDF Search KB",
+            "name": "v1 — Chroma + FTS5",
             "path": "."
+        },
+        {
+            "name": "v2 — Qdrant + bge-m3",
+            "path": "/Users/rajeshramani/ai/local-pdf-search-qdrant"
         }
     ],
     "settings": {
-        "python.defaultInterpreterPath": "${workspaceFolder}/venv/bin/python",
         "python.terminal.activateEnvironment": true,
         "files.exclude": {
             "**/__pycache__": true,
